@@ -19,8 +19,11 @@ module.exports = function(grunt) {
     // Run tasks whenever watched files change
     watch: {
       sass: {
-        files: ['**/*.scss','!node_modules/**/*.scss'],
-        tasks: ['sass:test']
+        files: ['**/*.scss', '!node_modules/**/*.scss'],
+        tasks: ['sass:test'],
+        options: {
+          livereload: true,
+        }
       }
     }
 
