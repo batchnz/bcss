@@ -7,30 +7,27 @@ module.exports = function(grunt) {
 
     // Compile Sass to CSS
     sass: {
-      build: {
+      test: {
         options: {
           style: 'expanded',
         },
         src: 'example.main.scss',
         dest: 'test/example.main.css'
-      },
-      options: {
-        sourcemap: 'none',
       }
     },
 
     // Run tasks whenever watched files change
     watch: {
       sass: {
-        files: ['**/*.scss','*.scss','!node_modules/**/*.scss'],
-        tasks: ['sass:build']
+        files: ['**/*.scss','!node_modules/**/*.scss'],
+        tasks: ['sass:test']
       }
     }
 
   });
 
   // Task definitions
-  grunt.registerTask('build', ['sass:build']);
-  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('test', ['sass:test']);
+  grunt.registerTask('default', ['test', 'watch']);
 
 };
