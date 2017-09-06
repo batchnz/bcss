@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "sass-mq": "^3.2.9"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.4.1"
+  }
+}
