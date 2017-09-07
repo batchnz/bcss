@@ -6,9 +6,9 @@
 // http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
 //
 // .usage {
-//   @include core-clearfix();
+//   @include _clearfix();
 // }
-@mixin core-clearfix() {
+@mixin _clearfix() {
 
   &:after {
     content: "" !important;

@@ -10,8 +10,8 @@
 // Base typographical styles and baseline grid. You need to define these values
 // in pixels: bcss will convert them to more appropriate units.
 
-$core-font-size:   16px   !default;
-$core-line-height: 22.4px !default;
+$_font-size:   16px   !default;
+$_line-height: 22.4px !default;
 
 
 
@@ -21,16 +21,16 @@ $core-line-height: 22.4px !default;
 // your baseline grid). It is not recommended that you modify these following
 // variables (it can break your vertical rhythm), but if you need to, you can.
 
-$core-spacing-unit: round($core-line-height) !default;
+$_spacing-unit: round($_line-height) !default;
 
 
 // How many times larger/smaller than the default should our spacing unit
 // variants be?
 
-$core-spacing-unit-factor-tiny:  0.25 !default;
-$core-spacing-unit-factor-small: 0.5  !default;
-$core-spacing-unit-factor-large: 2    !default;
-$core-spacing-unit-factor-huge:  4    !default;
+$_spacing-unit-factor-tiny:  0.25 !default;
+$_spacing-unit-factor-small: 0.5  !default;
+$_spacing-unit-factor-large: 2    !default;
+$_spacing-unit-factor-huge:  4    !default;
 
 
 
@@ -38,18 +38,18 @@ $core-spacing-unit-factor-huge:  4    !default;
 
 // Check that the chosen font rules are pixel numbers.
 
-@each $_core-font-rule in
-      $core-font-size
-      $core-line-height {
+@each $__font-rule in
+      $_font-size
+      $_line-height {
 
-  @if (type-of($_core-font-rule) == number) {
+  @if (type-of($__font-rule) == number) {
 
-    @if (unit($_core-font-rule) != "px") {
-      @error "`#{$_core-font-rule}` needs to be a pixel value.";
+    @if (unit($__font-rule) != "px") {
+      @error "`#{$__font-rule}` needs to be a pixel value.";
     }
 
   } @else {
-    @error "`#{$_core-font-rule}` needs to be a number.";
+    @error "`#{$__font-rule}` needs to be a number.";
   }
 
 }
@@ -57,20 +57,20 @@ $core-spacing-unit-factor-huge:  4    !default;
 
 // Check that the chosen size factors are unitless numbers.
 
-@each $_core-spacing-unit in
-      $core-spacing-unit-factor-tiny
-      $core-spacing-unit-factor-small
-      $core-spacing-unit-factor-large
-      $core-spacing-unit-factor-huge {
+@each $__spacing-unit in
+      $_spacing-unit-factor-tiny
+      $_spacing-unit-factor-small
+      $_spacing-unit-factor-large
+      $_spacing-unit-factor-huge {
 
-  @if (type-of($_core-spacing-unit) == number) {
+  @if (type-of($_spacing-unit) == number) {
 
-    @if (unitless($_core-spacing-unit) == false) {
-      @error "`#{$_core-spacing-unit}` needs to be unitless.";
+    @if (unitless($__spacing-unit) == false) {
+      @error "`#{$__spacing-unit}` needs to be unitless.";
     }
 
   } @else {
-    @error "`#{$_core-spacing-unit}` needs to be a number.";
+    @error "`#{$__spacing-unit}` needs to be a number.";
   }
 
 }
@@ -78,7 +78,7 @@ $core-spacing-unit-factor-huge:  4    !default;
 
 // Core reassignment. Do not alter anything below.
 
-$core-spacing-unit-tiny:  round($core-spacing-unit * $core-spacing-unit-factor-tiny);
-$core-spacing-unit-small: round($core-spacing-unit * $core-spacing-unit-factor-small);
-$core-spacing-unit-large: round($core-spacing-unit * $core-spacing-unit-factor-large);
-$core-spacing-unit-huge:  round($core-spacing-unit * $core-spacing-unit-factor-huge);
+$_spacing-unit-tiny:  round($_spacing-unit * $_spacing-unit-factor-tiny);
+$_spacing-unit-small: round($_spacing-unit * $_spacing-unit-factor-small);
+$_spacing-unit-large: round($_spacing-unit * $_spacing-unit-factor-large);
+$_spacing-unit-huge:  round($_spacing-unit * $_spacing-unit-factor-huge);
