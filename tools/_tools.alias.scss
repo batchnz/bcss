@@ -1,0 +1,21 @@
+///* ========================================================================
+//   #ALIAS
+//   ======================================================================== */
+
+// Reassign `$_spacing-unit` to `$spacing-unit`.
+$spacing-unit: $_spacing-unit;
+
+// Reassign `_spacing-unit` function to `spacing-unit`.
+@function spacing-unit($factor) {
+  @return _spacing-unit($factor);
+}
+
+// Reassign `_font-size` mixin to `font-size`.
+@mixin font-size($args...) {
+  @include _font-size($args...);
+}
+
+// Reassign `_visually-hidden` mixin to `visually-hidden`.
+@mixin visually-hidden($args...) {
+  @include _visually-hidden($args...);
+}
