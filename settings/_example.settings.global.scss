@@ -5,10 +5,12 @@
 // The global settings file contains any project-wide variables; things that
 // need to be made available to the entire codebase.
 
-// General typesetting.
+// General project typesetting.
 $global-ff:     'Helvetica Neue', Helvetica, Arial, sans-serif;
 $global-ff-alt:  Georgia, Times, 'Times New Roman', serif;
 
+
+// Project color selection.
 $global-color:        $black;
 $global-action-color: $blue;
 
