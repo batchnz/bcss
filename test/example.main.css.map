@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;gFAEgF;AAEhF;;;;GAIG;AAEH;;;;GAIG",
-"sources": ["../example.main.scss"],
+"mappings": "AAAA;;gFAEgF;AAEhF;;;;GAIG;AAEH;;;;GAIG;ACdH;;gFAEgF",
+"sources": ["../example.main.scss","../_example.shame.scss"],
 "names": [],
 "file": "example.main.css"
 }
