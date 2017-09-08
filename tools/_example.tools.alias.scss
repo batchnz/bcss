@@ -6,8 +6,8 @@
 $spacing-unit: $_spacing-unit;
 
 // Reassign `_spacing-unit` function to `spacing-unit`.
-@function spacing-unit($factor) {
-  @return _spacing-unit($factor);
+@function spacing-unit($args...) {
+  @return _spacing-unit($args...);
 }
 
 // Reassign `_font-size` mixin to `font-size`.
@@ -15,7 +15,12 @@ $spacing-unit: $_spacing-unit;
   @include _font-size($args...);
 }
 
+// Reassign `_clearfix` mixin to `clearfix`.
+@mixin clearfix() {
+  @include _clearfix();
+}
+
 // Reassign `_visually-hidden` mixin to `visually-hidden`.
-@mixin visually-hidden($args...) {
-  @include _visually-hidden($args...);
+@mixin visually-hidden() {
+  @include _visually-hidden();
 }
