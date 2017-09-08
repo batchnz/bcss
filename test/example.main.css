@@ -42,6 +42,31 @@ dd, ol, ul {
 
 /* stylelint-enable selector-list-comma-newline-after */
 /* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * Ensure the width and height properties include the content, padding and
+ * border, but not margin. It is now widely considered best practice (see: 
+ * paulirish.com/2012/box-sizing-border-box-ftw and
+ * developer.mozilla.org/en/docs/Web/CSS/box-sizing
+ */
+/**
+ * We are choosing not to implement Chris Coyier's modified approach which
+ * places emphasis on box-sizing inheritance (see: 
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice) 
+ *
+ * TODO:
+ *
+ * => Explain rational behind using the below approach over others.
+ *
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
    #SHAME
    ========================================================================== */
 

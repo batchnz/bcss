@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;gFAEgF;AAEhF;;;;GAIG;AAEH;;;;GAIG;ACdH;;gFAEgF;AAEhF;;GAEG;AAEH;;;GAGG;AAKH,yDAAyD;AAEzD;;;;;;;QAOS;EACP,aAAa,EAAE,IAA8B;;;AAI/C;;GAEG;AAEH,UAAW;EACT,WAAW,EAAE,IAA8B;;;AAG7C,wDAAwD;ACtCxD;;gFAEgF",
-"sources": ["../example.main.scss","../generic/_generic.shared.scss","../_example.shame.scss"],
+"mappings": "AAAA;;gFAEgF;AAEhF;;;;GAIG;AAEH;;;;GAIG;ACdH;;gFAEgF;AAEhF;;GAEG;AAEH;;;GAGG;AAKH,yDAAyD;AAEzD;;;;;;;QAOS;EACP,aAAa,EAAE,IAA8B;;;AAI/C;;GAEG;AAEH,UAAW;EACT,WAAW,EAAE,IAA8B;;;AAG7C,wDAAwD;ACtCxD;;gFAEgF;AAEhF;;;;;GAKG;AAEH;;;;;;;;;GASG;AAEH;;OAEQ;EACN,UAAU,EAAE,UAAU;;;ACzBxB;;gFAEgF",
+"sources": ["../example.main.scss","../generic/_generic.shared.scss","../generic/_generic.box-sizing.scss","../_example.shame.scss"],
 "names": [],
 "file": "example.main.css"
 }
