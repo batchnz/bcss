@@ -546,6 +546,25 @@ dd, ol, ul {
 
 /* stylelint-enable selector-list-comma-newline-after */
 /* ==========================================================================
+   #PAGE
+   ========================================================================== */
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ */
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.4;
+  /* [1] */
+  color: #272822;
+}
+
+/* ==========================================================================
    #SHAME
    ========================================================================== */
 
