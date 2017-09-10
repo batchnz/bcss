@@ -492,9 +492,11 @@ fieldset {
   margin-bottom: 22px;
 }
 
+/* stylelint-enable selector-list-comma-newline-after */
 /**
  * Consistent indentation for lists.
  */
+/* stylelint-disable selector-list-comma-newline-after */
 dd, ol, ul {
   margin-left: 22px;
 }

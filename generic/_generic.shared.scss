@@ -11,11 +11,9 @@
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
 
-$_margin-factor: 1 !default;
-
+$_spacing-margin-factor: 1 !default;
 
 /* stylelint-disable selector-list-comma-newline-after */
-
 address,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -24,16 +22,19 @@ figure,
 hr,
 table,
 fieldset {
-  margin-bottom: _spacing-unit($_margin-factor);
+  margin-bottom: _spacing-unit($_spacing-margin-factor);
 }
+/* stylelint-enable selector-list-comma-newline-after */
 
 
 /**
  * Consistent indentation for lists.
  */
 
-dd, ol, ul {
-  margin-left: _spacing-unit($_margin-factor);
-}
+$_spacing-indent-factor: 1 !default;
 
+/* stylelint-disable selector-list-comma-newline-after */
+dd, ol, ul {
+  margin-left: _spacing-unit($_spacing-indent-factor);
+}
 /* stylelint-enable selector-list-comma-newline-after */
