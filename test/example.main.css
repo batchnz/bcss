@@ -565,6 +565,46 @@ html {
 }
 
 /* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Simple default styles for headings 1 through 6 applied both to the element
+ * and as a placehold selector for use later in your project. Anything more
+ * opinionated than simple font-size changes should likely be applied via
+ * classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+h1 {
+  font-size: 36px;
+  line-height: 1.24444;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.86667;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.12;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.24444;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
    #SHAME
    ========================================================================== */
 

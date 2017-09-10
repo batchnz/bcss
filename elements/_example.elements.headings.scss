@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6 applied both to the element
+ * and as a placehold selector for use later in your project. Anything more
+ * opinionated than simple font-size changes should likely be applied via
+ * classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+h1,
+%h1 {
+  @include _font-size(36px);
+}
+
+h2,
+%h2 {
+  @include _font-size(28px);
+}
+
+h3,
+%h3 {
+  @include _font-size(24px);
+}
+
+h4,
+%h4 {
+  @include _font-size(20px);
+}
+
+h5,
+%h5 {
+  @include _font-size(18px);
+}
+
+h6,
+%h6 {
+  @include _font-size(16px);
+}
