@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+a {
+  color: $global-action-color;
+  text-decoration: none;
+  transition: $global-transition;
+
+  &:hover,
+  &:focus {
+    color: lighten($global-action-color, 30%);
+  }
+}
