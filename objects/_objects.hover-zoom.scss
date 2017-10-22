@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #HOVER-ZOOM
+   ========================================================================== */
+
+$_hover-zoom-scale: 1.15 !default;
+
+.o-hover-zoom {
+  overflow: hidden;
+}
+
+  .o-hover-zoom__content {
+    transition: $global-transition;
+
+    .o-hover-zoom:hover &,
+    .o-hover-zoom:focus & {
+      transform: scale($_hover-zoom-scale);
+    }
+  }
