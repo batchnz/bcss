@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #COVER
+   ========================================================================== */
+
+/**
+ * A simple object to cover an element with a background image.
+ */
+
+.o-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
