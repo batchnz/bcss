@@ -29,3 +29,8 @@ $spacing-unit: $_spacing-unit;
 @mixin placeholder() {
   @include _placeholder();
 }
+
+// Reassign `_bare-list` mixin to `bare-list`.
+@mixin bare-list($args...) {
+  @include _bare-list($args...);
+}
