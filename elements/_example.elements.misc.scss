@@ -7,3 +7,11 @@ hr {
   height: 1px;
   background-color: $global-color;
 }
+
+/**
+ * 1. Prevent horizontal resizing.
+ */
+
+textarea {
+    resize: vertical; /* [1] */
+}
