@@ -62,22 +62,22 @@
 
 // OBJECTS
 @import "objects/objects.box-off";
-@import "objects/objects.cover";
-@import "objects/objects.hover-zoom";
 @import "objects/objects.bullseye";
 @import "objects/objects.columns";
-@import "objects/objects.wrapper";
+@import "objects/objects.cover";
 @import "objects/objects.gutter";
+@import "objects/objects.hover-zoom";
 @import "objects/objects.split";
+@import "objects/objects.wrapper";
 
 
 
 
 
 // UTILITIES
-@import "utilities/utilities.hide";
-@import "utilities/utilities.headings";
 @import "utilities/utilities.alignment";
+@import "utilities/utilities.headings";
+@import "utilities/utilities.hide";
 
 
 
