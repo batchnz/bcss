@@ -7,12 +7,19 @@ module.exports = function(grunt) {
 
     // Compile Sass to CSS
     sass: {
-      test: {
+      expanded: {
         options: {
           style: 'expanded',
         },
         src: 'example.main.scss',
         dest: 'test/example.main.css'
+      },
+      compressed: {
+        options: {
+          style: 'compressed',
+        },
+        src: 'example.main.scss',
+        dest: 'test/example.main.min.css'
       }
     },
 
@@ -20,7 +27,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['**/*.scss', '!node_modules/**/*.scss'],
-        tasks: ['sass:test'],
+        tasks: ['sass:expanded', 'sass:compressed'],
         options: {
           livereload: true,
         }
@@ -30,7 +37,7 @@ module.exports = function(grunt) {
   });
 
   // Task definitions
-  grunt.registerTask('test', ['sass:test']);
+  grunt.registerTask('test', ['sass:expanded', 'sass:compressed']);
   grunt.registerTask('default', ['test', 'watch']);
 
 };
