@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #TEXT-TRANSFORMS
+   ========================================================================== */
+
+/**
+ * Utility classes to easily add text transforms:
+ *
+ *   <p class="u-capitalize">ensure this looks purrty</p>
+ *
+ */
+
+.u-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-capitalize {
+  text-transform: capitalize !important;
+}
