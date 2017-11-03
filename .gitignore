@@ -19,3 +19,8 @@ node_modules
 # Sass #
 #########
 .sass-cache
+
+# bcss #
+########
+test/*.css
+test/*.css.map
