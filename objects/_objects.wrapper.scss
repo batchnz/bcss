@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ *
+ * 1. Ensures no padding from other elements eat into our wrapper widths.
+ */
+
+$_wrappers: (
+  default: 1000px
+) !default;
+
+.o-wrapper {
+  max-width: map-get($_wrappers, default);
+  box-sizing: content-box; /* [1] */
+  margin-right: auto;
+  margin-left: auto;
+
+  @include _clearfix();
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+@each $_wrapper-name, $_wrapper-value in $_wrappers {
+
+  .o-wrapper--#{$_wrapper-name} {
+
+    @include _generate-classes() {
+      max-width: $_wrapper-value;
+    }
+
+  }
+
+}

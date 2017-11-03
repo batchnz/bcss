@@ -1,0 +1,67 @@
+/* ==========================================================================
+   #GUTTER
+   ========================================================================== */
+
+/**
+ * A gutter can be used to create a buffer between our page and the edge of
+ * an element or viewport.
+ *
+ * 1. Ensures the gutter does not eat into any wrapper width.
+ */
+
+.o-gutter {
+  @include _generate-classes() {
+    box-sizing: content-box; /* [1] */
+    padding-left: $_spacing-unit;
+    padding-right: $_spacing-unit;
+  }
+}
+
+
+
+
+
+/* Size variants.
+   ========================================================================== */
+
+.o-gutter--flush {
+  @include _generate-classes() {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.o-gutter--default {
+  @include _generate-classes() {
+    padding-left: $_spacing-unit;
+    padding-right: $_spacing-unit;
+  }
+}
+
+.o-gutter--tiny {
+  @include _generate-classes() {
+    padding-left: $_spacing-unit-tiny;
+    padding-right: $_spacing-unit-tiny;
+  }
+}
+
+.o-gutter--small {
+  @include _generate-classes() {
+    padding-left: $_spacing-unit-small;
+    padding-right: $_spacing-unit-small;
+  }
+}
+
+.o-gutter--large {
+  @include _generate-classes() {
+    padding-left: $_spacing-unit-large;
+    padding-right: $_spacing-unit-large;
+  }
+}
+
+.o-gutter--huge {
+  @include _generate-classes() {
+    padding-left: $_spacing-unit-huge;
+    padding-right: $_spacing-unit-huge;
+  }
+}
