@@ -1,0 +1,51 @@
+/* ==========================================================================
+   #COLUMNS
+   ========================================================================== */
+
+.o-columns {
+  column-gap: $_spacing-unit;
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+.o-columns--tiny {
+  column-gap: $_spacing-unit-tiny;
+}
+
+.o-columns--small {
+  column-gap: $_spacing-unit-small;
+}
+
+.o-columns--large {
+  column-gap: $_spacing-unit-large;
+}
+
+.o-columns--huge {
+  column-gap: $_spacing-unit-huge;
+}
+
+
+
+
+
+/* Column variants
+   ========================================================================== */
+
+$_columns: 2 3 !default;
+
+@each $_column in $_columns {
+
+  .o-columns--#{$_column} {
+
+    @include _generate-classes {
+      column-count: $_column;
+    }
+  
+  }
+
+}
