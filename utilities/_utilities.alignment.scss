@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #ALIGNMENT
+   ========================================================================== */
+
+/**
+ * Utility classes to easily apply alignment to elements:
+ *
+ *   <p class="u-ta-center"></p>
+ *
+ */
+
+.u-ta-left {
+  text-align: left !important;
+}
+
+.u-ta-center {
+  text-align: center !important;
+}
+
+.u-ta-right {
+  text-align: right !important;
+}
+
+.u-va-baseline {
+  vertical-align: baseline !important;
+}
+
+.u-va-top {
+  vertical-align: top !important;
+}
+
+.u-va-middle {
+  vertical-align: middle !important;
+}
+
+.u-va-bottom {
+  vertical-align: bottom !important;
+}
+
+.u-m-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
