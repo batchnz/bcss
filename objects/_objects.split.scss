@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #SPLIT
+   ========================================================================== */
+
+/**
+ * Split apart two naughty children to opposite ends of their container.
+ */
+
+.o-split {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+/* Alignment variants
+   ========================================================================== */
+
+.o-split--top {
+  align-items: flex-start;
+}
+
+.o-split--bottom {
+  align-items: flex-end;
+}
