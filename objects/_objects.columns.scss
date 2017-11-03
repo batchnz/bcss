@@ -3,7 +3,9 @@
    ========================================================================== */
 
 .o-columns {
-  column-gap: $_spacing-unit;
+  @include _generate-classes {
+    column-gap: $_spacing-unit;
+  }
 }
 
 
@@ -14,19 +16,27 @@
    ========================================================================== */
 
 .o-columns--tiny {
-  column-gap: $_spacing-unit-tiny;
+  @include _generate-classes {
+    column-gap: $_spacing-unit-tiny;
+  }
 }
 
 .o-columns--small {
-  column-gap: $_spacing-unit-small;
+  @include _generate-classes {
+    column-gap: $_spacing-unit-small;
+  }
 }
 
 .o-columns--large {
-  column-gap: $_spacing-unit-large;
+  @include _generate-classes {
+    column-gap: $_spacing-unit-large;
+  }
 }
 
 .o-columns--huge {
-  column-gap: $_spacing-unit-huge;
+  @include _generate-classes {
+    column-gap: $_spacing-unit-huge;
+  }
 }
 
 
