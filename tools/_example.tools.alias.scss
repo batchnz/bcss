@@ -34,3 +34,8 @@ $spacing-unit: $_spacing-unit;
 @mixin bare-list($args...) {
   @include _bare-list($args...);
 }
+
+// Reassign `_generate-classes` mixin to `generate-classes`.
+@mixin generate-classes($args...) {
+  @include _generate-classes($args...);
+}

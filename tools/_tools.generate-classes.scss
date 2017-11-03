@@ -1,0 +1,29 @@
+///* ========================================================================
+//   #GENERATE-CLASSES
+//   ======================================================================== */
+
+@mixin _generate-classes($root: true) {
+  
+  @if $root {
+    @content;
+  }
+
+  @each $label, $width in $mq-breakpoints {
+    &\@#{$label} {
+      @include mq($from: $label) {
+        @content;
+      }
+    }
+
+    // @each $label2, $width2 in $mq-breakpoints {
+    //   @if (($label != $label2) and ($width < $width2)) {
+    //     &\@#{$label}-#{$label2} {
+    //       @include mq($from: $label, $until: $label2) {
+    //         @content;
+    //       }
+    //     }
+    //   }
+    // }
+    
+  }
+}
