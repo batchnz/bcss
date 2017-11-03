@@ -8,9 +8,9 @@
     @content;
   }
 
-  @each $label, $width in $mq-breakpoints {
-    &\@#{$label} {
-      @include mq($from: $label) {
+  @each $name, $value in $mq-breakpoints {
+    &\@#{$name} {
+      @include mq($from: $name) {
         @content;
       }
     }
