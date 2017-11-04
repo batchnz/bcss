@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #BACKGROUNDS
+   ========================================================================== */
+
+/**
+ * Utility classes to easily apply background-color to elements:
+ *
+ *   <div class="u-bg-white"></div>
+ *
+ */
+
+$_backgrounds: (
+  "transparent": transparent,
+) !default;
+
+@each $_background-name, $_background-value in $_backgrounds {
+  .u-bg-#{$_background-name} {
+    background-color: $_background-value !important;
+  }
+}
