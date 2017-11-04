@@ -1,0 +1,226 @@
+
+/* ==========================================================================
+   #LAYOUT
+   ========================================================================== */
+
+/**
+ * Grid-like layout system using Flexbox.
+ *
+ * The layout object provides us with a column-style layout system. This file
+ * contains the basic structural elements, but classes should be complemented
+ * with width utilities, for example:
+ *
+ *   <div class="o-layout">
+ *     <div class="o-layout__item u-1/2">
+ *     </div>
+ *     <div class="o-layout__item u-1/2">
+ *     </div>
+ *   </div>
+ *
+ * The above will create a two-column structure in which each column will
+ * fluidly fill half of the width of the parent. We can have more complex
+ * systems:
+ *
+ * We can also manipulate entire layout systems by adding a series of modifiers
+ * to the `.o-layout` block. For example:
+ *
+ *   <div class="o-layout o-layout--reverse">
+ *
+ * This will reverse the displayed order of the system so that it runs in the
+ * opposite order to our source, effectively flipping the system over.
+ *
+ *   <div class="o-layout o-layout--[right|center]">
+ *
+ * This will cause the system to fill up from either the centre or the right
+ * hand side. Default behaviour is to fill up the layout system from the left.
+ *
+ * There are plenty more options available to us: explore them below.
+ */
+
+
+
+
+/* Default/mandatory classes.
+   ========================================================================== */
+
+/**
+ * 1. Allows us to use the layout object on any type of element.
+ * 2. We need to defensively reset any box-model properties.
+ * 3. Use the negative margin trick for multi-row grids:
+ *    http://csswizardry.com/2011/08/building-better-grid-systems/
+ */
+
+.o-layout {
+  display: flex; /* [1] */
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none; /* [1] */
+  padding: 0; /* [2] */
+  margin: 0; /* [2] */
+  margin-left: -$_spacing-unit; /* [3] */
+}
+
+
+/**
+ * 1. Required in order to combine fluid widths with fixed gutters.
+ * 2. Allows us to manipulate grids vertically, with text-level properties,
+ *    etc.
+ * 3. By default, all layout items are full-width (mobile first).
+ * 4. Gutters provided by left padding:
+ *    http://csswizardry.com/2011/08/building-better-grid-systems/
+ */
+
+.o-layout__item {
+  box-sizing: border-box; /* [1] */
+  flex: 0 1 auto; /* [2] */
+  width: 100%; /* [3] */
+  padding-left: $_spacing-unit; /* [4] */
+}
+
+
+
+
+
+/* Gutter size modifiers.
+   ========================================================================== */
+
+.o-layout--flush {
+  margin-left: 0;
+
+  & > .o-layout__item {
+    padding-left: 0;
+  }
+}
+
+.o-layout--tiny {
+  margin-left: -$_spacing-unit-tiny;
+
+  > .o-layout__item {
+    padding-left: $_spacing-unit-tiny;
+  }
+
+}
+
+.o-layout--small {
+  margin-left: -$_spacing-unit-small;
+
+  > .o-layout__item {
+    padding-left: $_spacing-unit-small;
+  }
+
+}
+
+.o-layout--large {
+  margin-left: -$_spacing-unit-large;
+
+  > .o-layout__item {
+    padding-left: $_spacing-unit-large;
+  }
+
+}
+
+.o-layout--huge {
+  margin-left: -$_spacing-unit-huge;
+
+  > .o-layout__item {
+    padding-left: $_spacing-unit-huge;
+  }
+
+}
+
+
+
+
+
+/* Vertical alignment modifiers.
+   ========================================================================== */
+
+/**
+ * Align all grid items to the middles of each other.
+ */
+
+.o-layout--middle {
+  align-items: center;
+}
+
+
+/**
+ * Align all grid items to the bottoms of each other.
+ */
+
+.o-layout--bottom {
+  align-items: flex-end;
+}
+
+
+
+
+
+/* Fill order modifiers.
+   ========================================================================== */
+
+/**
+ * Fill up the layout system from the centre.
+ */
+
+.o-layout--center {
+  justify-content: center;
+}
+
+
+/**
+ * Fill up the layout system from the right-hand side.
+ */
+
+.o-layout--right {
+  justify-content: flex-end;
+}
+
+
+/**
+ * Fill up the layout system from the left-hand side. This will likely only be
+ * needed when using in conjunction with `.o-layout--reverse`.
+ */
+
+.o-layout--left {
+  justify-content: flex-start;
+
+   &.o-layout--reverse {
+    justify-content: flex-end;
+  }
+
+}
+
+
+/**
+ * Content distribution.
+ */
+
+.o-layout--reverse {
+  flex-direction: row-reverse;
+}
+
+.o-layout--around {
+  justify-content: space-around;
+}
+
+.o-layout--between {
+  justify-content: space-between;
+}
+
+
+
+
+
+/* Auto-widths modifier.
+   ========================================================================== */
+
+/**
+ * Automatically size cells by distributing them equally
+ */
+
+.o-layout--auto {
+  & > .o-layout__item {
+    flex: 1 0 0;
+  }
+}
