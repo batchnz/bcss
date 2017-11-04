@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #FILLS
+   ========================================================================== */
+
+/**
+ * Fill classes to easily apply fills to SVG:
+ *
+ *   <p class="u-fill-white"></p>
+ *
+ */
+
+$_fills: (
+  "white": #fff,
+) !default;
+
+@each $_fill-name, $_fill-value in $_fills {
+  .u-fill-#{$_fill-name} {
+    fill: $_fill-value !important;
+  }
+}
