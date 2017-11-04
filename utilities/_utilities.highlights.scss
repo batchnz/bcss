@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #HIGHLIGHTS
+   ========================================================================== */
+
+/**
+ * Utility classes to easily apply color to text:
+ *
+ *   <p class="u-hl-white"></p>
+ *
+ */
+
+$_highlights: (
+  "white": #fff,
+) !default;
+
+@each $_highlight-name, $_highlight-value in $_highlights {
+  .u-hl-#{$_highlight-name} {
+    color: $_highlight-value !important;
+  }
+}
