@@ -1,0 +1,66 @@
+/* ==========================================================================
+   #SPACINGS
+   ========================================================================== */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+ *   .u-mt {}
+ *   .u-pl0 {}
+ *   .u-mr- {}
+ *   .u-p {}
+ *   .u-mh+ {}
+ */
+
+/* stylelint-disable string-quotes */
+
+$_spacing-properties: (
+  'p': 'padding',
+  'm': 'margin'
+);
+
+$_spacing-directions: (
+  't': '-top',
+  'r': '-right',
+  'b': '-bottom',
+  'l': '-left',
+  'h': '-left' '-right',
+  'v': '-top' '-bottom'
+);
+
+$_spacing-sizes: (
+  '--': $_spacing-unit-tiny,
+  '-': $_spacing-unit-small,
+  \+: $_spacing-unit-large,
+  \+\+: $_spacing-unit-huge,
+  '0': 0
+);
+
+@each $_property-name, $_property-value in $_spacing-properties {
+
+  @each $_direction-name, $_direction-values in $_spacing-directions {
+
+    @each $_size-name, $_size-value in $_spacing-sizes {
+      
+      @each $_direction-value in $_direction-values {
+        
+        .u-#{$_property-name}#{$_direction-name}#{$_size-name} {
+
+          @include _generate-classes {
+
+            #{$_property-value}#{$_direction-value}: $_size-value !important;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* stylelint-enable string-quotes */
