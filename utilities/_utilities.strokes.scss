@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #STROKE
+   ========================================================================== */
+
+/**
+ * Stroke classes to easily apply strokes to SVG:
+ *
+ *   <p class="u-stroke-white"></p>
+ *
+ */
+
+$_strokes: (
+  "white": #fff,
+) !default;
+
+@each $_stroke-name, $_stroke-value in $_strokes {
+  .u-stroke-#{$_stroke-name} {
+    stroke: $_stroke-value !important;
+  }
+}
