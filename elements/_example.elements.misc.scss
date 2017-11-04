@@ -10,8 +10,10 @@ hr {
 
 /**
  * 1. Prevent horizontal resizing.
+ * 2. Move an accompanying label to the top.
  */
 
 textarea {
-    resize: vertical; /* [1] */
+  resize: vertical; /* [1] */
+  vertical-align: top; /* [2] */
 }
