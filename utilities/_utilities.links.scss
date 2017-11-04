@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+.u-secret-link,
+.u-secret-links a {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $global-action-color;
+  }
+}
+
+.u-invisible-link,
+.u-invisible-links a {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+}
