@@ -8,11 +8,11 @@ $_hover-zoom-scale: 1.15 !default;
   overflow: hidden;
 }
 
-  .o-hover-zoom__content {
-    transition: $global-transition;
+.o-hover-zoom__content {
+  transition: $global-transition;
 
-    .o-hover-zoom:hover &,
-    .o-hover-zoom:focus & {
-      transform: scale($_hover-zoom-scale);
-    }
+  .o-hover-zoom:hover &,
+  .o-hover-zoom:focus & {
+    transform: scale($_hover-zoom-scale);
   }
+}

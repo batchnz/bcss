@@ -9,35 +9,25 @@
 
 // Base typographical styles and baseline grid. You need to define these values
 // in pixels: bcss will convert them to more appropriate units.
-
 $_font-size:   16px   !default;
 $_line-height: 22.4px !default;
-
-
-
 
 
 // Spacing values are determined based on your project’s global line height (i.e
 // your baseline grid). It is not recommended that you modify these following
 // variables (it can break your vertical rhythm), but if you need to, you can.
-
 $_spacing-unit: round($_line-height) !default;
 
 
 // How many times larger/smaller than the default should our spacing unit
 // variants be?
-
 $_spacing-unit-factor-tiny:  0.25 !default;
 $_spacing-unit-factor-small: 0.5  !default;
 $_spacing-unit-factor-large: 2    !default;
 $_spacing-unit-factor-huge:  4    !default;
 
 
-
-
-
 // Check that the chosen font rules are pixel numbers.
-
 @each $_rule in
       $_font-size
       $_line-height {
@@ -56,7 +46,6 @@ $_spacing-unit-factor-huge:  4    !default;
 
 
 // Check that the chosen size factors are unitless numbers.
-
 @each $_unit in
       $_spacing-unit-factor-tiny
       $_spacing-unit-factor-small
@@ -77,7 +66,6 @@ $_spacing-unit-factor-huge:  4    !default;
 
 
 // Core reassignment. Do not alter anything below.
-
 $_spacing-unit-tiny:  round($_spacing-unit * $_spacing-unit-factor-tiny);
 $_spacing-unit-small: round($_spacing-unit * $_spacing-unit-factor-small);
 $_spacing-unit-large: round($_spacing-unit * $_spacing-unit-factor-large);

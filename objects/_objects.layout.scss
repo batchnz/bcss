@@ -37,12 +37,6 @@
  * There are plenty more options available to us: explore them below.
  */
 
-
-
-
-/* Default/mandatory classes.
-   ========================================================================== */
-
 /**
  * 1. Allows us to use the layout object on any type of element.
  * 2. We need to defensively reset any box-model properties.
@@ -90,6 +84,7 @@
   & > .o-layout__item {
     padding-left: 0;
   }
+  
 }
 
 .o-layout--tiny {

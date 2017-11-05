@@ -25,17 +25,13 @@ $_wrappers: (
 
 
 
-/* Size variants
+/* Size variants.
    ========================================================================== */
 
 @each $_wrapper-name, $_wrapper-value in $_wrappers {
-
   .o-wrapper--#{$_wrapper-name} {
-
     @include _generate-classes() {
       max-width: $_wrapper-value;
     }
-
   }
-
 }

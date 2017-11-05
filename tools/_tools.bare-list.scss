@@ -2,7 +2,7 @@
 //   #BARE-LIST
 //   ======================================================================== */
 
-@mixin _bare-list($dl:false) {
+@mixin _bare-list($dl: false) {
   @if $dl {
     > dd {
       margin-left: 0;

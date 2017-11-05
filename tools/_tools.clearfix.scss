@@ -8,12 +8,11 @@
 // .usage {
 //   @include _clearfix();
 // }
+//
 @mixin _clearfix() {
-
   &:after {
     content: "" !important;
     display: block !important;
     clear: both !important;
   }
-
 }
