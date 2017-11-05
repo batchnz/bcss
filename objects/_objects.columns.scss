@@ -49,13 +49,9 @@
 $_columns: 2 3 !default;
 
 @each $_column in $_columns {
-
   .o-columns--#{$_column} {
-
     @include _generate-classes {
       column-count: $_column;
     }
-  
   }
-
 }
