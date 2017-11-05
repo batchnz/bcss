@@ -9,6 +9,7 @@
   }
 
   @each $name, $value in $mq-breakpoints {
+
     &\@#{$name} {
       @include mq($from: $name) {
         @content;
@@ -16,13 +17,17 @@
     }
 
     // @each $name2, $value2 in $mq-breakpoints {
+    // 
     //   @if (($label != $name2) and ($width < $value2)) {
+    //
     //     &\@#{$label}-#{$name2} {
     //       @include mq($from: $label, $until: $name2) {
     //         @content;
     //       }
     //     }
+    //
     //   }
+    //
     // }
     
   }

@@ -4,6 +4,7 @@
 
 $_hover-zoom-scale: 1.15 !default;
 
+
 .o-hover-zoom {
   overflow: hidden;
 }
@@ -16,4 +17,5 @@ $_hover-zoom-scale: 1.15 !default;
     .o-hover-zoom:focus & {
       transform: scale($_hover-zoom-scale);
     }
+
   }

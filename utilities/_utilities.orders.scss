@@ -2,12 +2,18 @@
    #ORDERS
    ========================================================================== */
 
+// The number of orders that we should generate utilities for.
 $_orders: 3 !default;
 
+
 @for $_i from 1 through $_orders {
+
   .u-order-#{$_i} {
+
     @include _generate-classes {
       order: #{$_i};
     }
+
   }
+
 }

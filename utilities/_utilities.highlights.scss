@@ -2,6 +2,12 @@
    #HIGHLIGHTS
    ========================================================================== */
 
+// A list of highlight names and colors that we should generate utilities for.
+$_highlights: (
+  "white": #fff,
+) !default;
+
+
 /**
  * Utility classes to easily apply color to text:
  *
@@ -9,12 +15,10 @@
  *
  */
 
-$_highlights: (
-  "white": #fff,
-) !default;
-
 @each $_highlight-name, $_highlight-value in $_highlights {
+
   .u-hl-#{$_highlight-name} {
     color: $_highlight-value !important;
   }
+
 }

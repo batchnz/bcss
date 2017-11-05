@@ -2,6 +2,9 @@
    #COLUMNS
    ========================================================================== */
 
+$_columns: 2 3 !default;
+
+
 .o-columns {
   @include _generate-classes {
     column-gap: $_spacing-unit;
@@ -46,12 +49,12 @@
 /* Column variants.
    ========================================================================== */
 
-$_columns: 2 3 !default;
-
 @each $_column in $_columns {
+
   .o-columns--#{$_column} {
     @include _generate-classes {
       column-count: $_column;
-    }
+    }  
   }
+
 }

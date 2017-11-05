@@ -2,6 +2,12 @@
    #BACKGROUNDS
    ========================================================================== */
 
+// A list of background names and colors that we should generate utilities for.
+$_backgrounds: (
+  "transparent": transparent,
+) !default;
+
+
 /**
  * Utility classes to easily apply background-color to elements:
  *
@@ -9,12 +15,10 @@
  *
  */
 
-$_backgrounds: (
-  "transparent": transparent,
-) !default;
-
 @each $_background-name, $_background-value in $_backgrounds {
+
   .u-bg-#{$_background-name} {
     background-color: $_background-value !important;
   }
+
 }

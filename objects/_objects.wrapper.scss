@@ -2,15 +2,17 @@
    #WRAPPER
    ========================================================================== */
 
+// A list of widths that get generated as modifier classes.
+$_wrappers: (
+  default: 1000px
+) !default;
+
+
 /**
  * Page-level constraining and wrapping elements.
  *
  * 1. Ensures no padding from other elements eat into our wrapper widths.
  */
-
-$_wrappers: (
-  default: 1000px
-) !default;
 
 .o-wrapper {
   max-width: map-get($_wrappers, default);
@@ -29,9 +31,11 @@ $_wrappers: (
    ========================================================================== */
 
 @each $_wrapper-name, $_wrapper-value in $_wrappers {
+
   .o-wrapper--#{$_wrapper-name} {
     @include _generate-classes() {
       max-width: $_wrapper-value;
     }
   }
+
 }

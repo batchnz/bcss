@@ -2,6 +2,12 @@
    #STROKES
    ========================================================================== */
 
+// A list of stroke names and colours that we should generate utilities for.
+$_strokes: (
+  "white": #fff,
+) !default;
+
+
 /**
  * Stroke classes to easily apply strokes to SVG:
  *
@@ -9,12 +15,10 @@
  *
  */
 
-$_strokes: (
-  "white": #fff,
-) !default;
-
 @each $_stroke-name, $_stroke-value in $_strokes {
+
   .u-stroke-#{$_stroke-name} {
     stroke: $_stroke-value !important;
   }
+
 }

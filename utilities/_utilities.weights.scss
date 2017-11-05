@@ -2,6 +2,10 @@
    #WEIGHTS
    ========================================================================== */
 
+// A list of weights that we should generate utilities for.
+$_weights: 100 200 300 400 500 600 700 800 900 !default;
+
+
 /**
  * Utility classes to easily add weight to text:
  *
@@ -9,10 +13,10 @@
  *
  */
 
-$_weights: 100 200 300 400 500 600 700 800 900 !default;
-
 @each $_weight in $_weights {
+
   .u-#{$_weight} {
     font-weight: $_weight !important;
   }
+
 }
