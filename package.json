@@ -7,5 +7,34 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.4.1"
-  }
+  },
+  "name": "bcss",
+  "description": "A design-agnostic front-end framework for building both small and large websites. Powered by Sass and referencing the ideas and methodologies of BEM, OOCSS and ITCSS.",
+  "version": "0.0.0",
+  "main": "example.main.scss",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batchnz/bcss.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "oocss",
+    "itcss",
+    "bem",
+    "inuitcss"
+  ],
+  "author": "Batch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batchnz/bcss/issues"
+  },
+  "homepage": "https://github.com/batchnz/bcss#readme"
 }
