@@ -27,7 +27,9 @@ $spacing-unit: $_spacing-unit;
 
 // Reassign `_placeholder` mixin to `placeholder`.
 @mixin placeholder() {
-  @include _placeholder();
+  @include _placeholder() {
+    @content;
+  };
 }
 
 // Reassign `_bare-list` mixin to `bare-list`.
