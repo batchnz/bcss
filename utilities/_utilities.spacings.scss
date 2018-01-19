@@ -14,12 +14,8 @@
  */
 
 /* stylelint-disable string-quotes */
-$_spacing-properties: (
-  'p': 'padding',
-  'm': 'margin'
-);
-
 $_spacing-directions: (
+  null: null,
   't': '-top',
   'r': '-right',
   'b': '-bottom',
@@ -28,7 +24,13 @@ $_spacing-directions: (
   'v': '-top' '-bottom'
 );
 
+$_spacing-properties: (
+  'p': 'padding',
+  'm': 'margin'
+);
+
 $_spacing-sizes: (
+  null: $_spacing-unit,
   '--': $_spacing-unit-tiny,
   '-': $_spacing-unit-small,
   \+: $_spacing-unit-large,
