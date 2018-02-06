@@ -6,7 +6,7 @@ $_columns: 2 3 !default;
 
 
 .o-columns {
-  @include _generate-classes {
+  @include _suffixer {
     column-gap: $_spacing-unit;
   }
 }
@@ -19,25 +19,25 @@ $_columns: 2 3 !default;
    ========================================================================== */
 
 .o-columns--tiny {
-  @include _generate-classes {
+  @include _suffixer {
     column-gap: $_spacing-unit-tiny;
   }
 }
 
 .o-columns--small {
-  @include _generate-classes {
+  @include _suffixer {
     column-gap: $_spacing-unit-small;
   }
 }
 
 .o-columns--large {
-  @include _generate-classes {
+  @include _suffixer {
     column-gap: $_spacing-unit-large;
   }
 }
 
 .o-columns--huge {
-  @include _generate-classes {
+  @include _suffixer {
     column-gap: $_spacing-unit-huge;
   }
 }
@@ -52,7 +52,7 @@ $_columns: 2 3 !default;
 @each $_column in $_columns {
 
   .o-columns--#{$_column} {
-    @include _generate-classes {
+    @include _suffixer {
       column-count: $_column;
     }  
   }

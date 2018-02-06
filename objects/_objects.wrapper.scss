@@ -33,7 +33,7 @@ $_wrappers: (
 @each $_wrapper-name, $_wrapper-value in $_wrappers {
 
   .o-wrapper--#{$_wrapper-name} {
-    @include _generate-classes() {
+    @include _suffixer() {
       max-width: $_wrapper-value;
     }
   }

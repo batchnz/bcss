@@ -1,8 +1,8 @@
 ///* ========================================================================
-//   #GENERATE-CLASSES
+//   #SUFFIXER
 //   ======================================================================== */
 
-@mixin _generate-classes($root: true) {
+@mixin _suffixer($root: true) {
   
   @if $root {
     @content;

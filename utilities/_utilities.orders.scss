@@ -10,7 +10,7 @@ $_orders: 3 !default;
 
   .u-order-#{$_i} {
 
-    @include _generate-classes {
+    @include _suffixer {
       order: #{$_i};
     }
 

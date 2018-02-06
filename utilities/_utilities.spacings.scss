@@ -48,7 +48,7 @@ $_spacing-sizes: (
         
         .u-#{$_property-name}#{$_direction-name}#{$_size-name} {
 
-          @include _generate-classes {
+          @include _suffixer {
             #{$_property-value}#{$_direction-value}: $_size-value !important;
           }
 

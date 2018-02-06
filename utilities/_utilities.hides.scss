@@ -17,13 +17,13 @@
  */
 
 .u-hide {
-  @include _generate-classes {
+  @include _suffixer {
     display: none !important;
   }
 }
 
 .u-show {
-  @include _generate-classes {
+  @include _suffixer {
     display: block !important;
   }
 }

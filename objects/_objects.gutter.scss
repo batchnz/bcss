@@ -10,7 +10,7 @@
  */
 
 .o-gutter {
-  @include _generate-classes() {
+  @include _suffixer() {
     box-sizing: content-box; /* [1] */
     padding-left: $_spacing-unit;
     padding-right: $_spacing-unit;
@@ -25,42 +25,42 @@
    ========================================================================== */
 
 .o-gutter--flush {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 .o-gutter--default {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: $_spacing-unit;
     padding-right: $_spacing-unit;
   }
 }
 
 .o-gutter--tiny {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: $_spacing-unit-tiny;
     padding-right: $_spacing-unit-tiny;
   }
 }
 
 .o-gutter--small {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: $_spacing-unit-small;
     padding-right: $_spacing-unit-small;
   }
 }
 
 .o-gutter--large {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: $_spacing-unit-large;
     padding-right: $_spacing-unit-large;
   }
 }
 
 .o-gutter--huge {
-  @include _generate-classes() {
+  @include _suffixer() {
     padding-left: $_spacing-unit-huge;
     padding-right: $_spacing-unit-huge;
   }
