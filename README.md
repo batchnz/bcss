@@ -2,7 +2,7 @@
 
 **bcss is a design-agnostic front-end framework for building both small and large websites. It is powered by Sass and references the ideas and methodologies of BEM, OOCSS and ITCSS.**
 
-While not technically a fork of [inuitcss](https://github.com/inuitcss/inuitcss), bcss might well as be. It is heavily influenced by the work of [Harry Roberts](https://csswizardry.com/archive/), [his blog](https://csswizardry.com/) and inuitcss. While the two projects are very similar our desire to build upon Harry's originals ideas and explore new possibilities led us to create and maintain our own framework. 
+While not technically a fork of [inuitcss](https://github.com/inuitcss/inuitcss), bcss might well as be. It is heavily influenced by the work of [Harry Roberts](https://csswizardry.com/), [his blog](https://csswizardry.com/archive/) and inuitcss. While the two projects are very similar our desire to build upon Harry's originals ideas and explore new possibilities led us to create and maintain our own framework. 
 
 ### Commenting
 
