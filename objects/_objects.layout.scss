@@ -148,6 +148,20 @@
 }
 
 
+/**
+ * Stretch all grid items of each row to have an equal-height.
+ *
+ */
+
+.o-layout--stretch {
+
+  > .o-layout__item {
+    display: flex;
+  }
+
+}
+
+
 
 
 
@@ -216,7 +230,7 @@
 
 .o-layout--auto {
 
-  & > .o-layout__item {
+  > .o-layout__item {
     flex: 1 0 0;
   }
 
