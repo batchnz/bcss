@@ -41,3 +41,8 @@ $spacing-unit: $_spacing-unit;
 @mixin suffixer($args...) {
   @include _suffixer($args...);
 }
+
+// Reassign `_scroll` mixin to `suffixer`.
+@mixin scroll($args...) {
+  @include _scroll($args...);
+}
