@@ -1,30 +1,31 @@
-/* ==========================================================================
-   #SCROLL
-   ========================================================================== */
+///* ========================================================================
+//   #SCROLL
+//   ======================================================================== */
 
-  // Mixin for creating a overflow scrolling element, options for x or y axis scrolling
-  @mixin _scroll($axis) {
+// Mixin for creating an overflow scrolling element with options for both y and
+// x scrolling.
+@mixin _scroll($axis: y) {
 
-    @if ( $axis == 'x' ) {
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-    
-    @else if ( $axis == 'y' ) {
-      overflow-y: hidden;
-      overflow-x: auto;
-    }
+  @if ($axis == 'y') {
+    overflow-y: hidden;
+    overflow-x: auto;
+  } 
 
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    overflow: -moz-scrollbars-none;
-    
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    
-    &::-moz-scrollbar {
-        display: none;
-    }
-  
+  @else if ($axis == 'x') {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
+
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-moz-scrollbar {
+    display: none;
+  }
+  
+}

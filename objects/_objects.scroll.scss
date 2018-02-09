@@ -1,15 +1,15 @@
 /* ==========================================================================
    #SCROLL
    ========================================================================== */
-  /**
-    * Two simple objects for creating overflow scolling elements, x or y axis scrolling
-  */
 
-  .o-scroll-x {
-    @include _scroll(x);
-  }
-  
-  .o-scroll-y {
-    @include _scroll(y);
-  }
+/**
+ * Two simple objects for creating overflow scolling elements.
+ */
 
+.o-scroll-y {
+  @include _scroll(y);
+}
+
+.o-scroll-x {
+  @include _scroll(x);
+}
