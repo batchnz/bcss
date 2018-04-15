@@ -10,6 +10,11 @@ $spacing-unit: $_spacing-unit;
   @return _spacing-unit($args...);
 }
 
+// Reassign `_spacing-unit` function to `spacing`.
+@function spacing($args...) {
+  @return _spacing-unit($args...);
+}
+
 // Reassign `_font-size` mixin to `font-size`.
 @mixin font-size($args...) {
   @include _font-size($args...);
