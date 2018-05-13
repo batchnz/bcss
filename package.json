@@ -10,7 +10,7 @@
   },
   "name": "bcss",
   "description": "A design-agnostic front-end framework for building both small and large websites. Powered by Sass and referencing the ideas and methodologies of BEM, OOCSS and ITCSS.",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "main": "example.main.scss",
   "directories": {
     "test": "test"
