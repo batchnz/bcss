@@ -17,7 +17,7 @@ node_modules
 .grunt
 
 # Sass #
-#########
+########
 .sass-cache
 
 # bcss #
